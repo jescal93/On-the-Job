@@ -43,6 +43,20 @@
         .Hero {
             padding-left: 130px;
         }
+        #note {
+            font-family: verdana;
+            color: red;
+        }
+        .footer {
+            display: flex;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .link {
+            background-color: grey;
+        }
     </style>
 </head>
 <body>
@@ -136,7 +150,7 @@
                 </ul>
             </li>
         </ul>
-        <ul style="list-style-type:disc;">
+        <ul id="note" style="list-style-type:disc;">
             <li>Note:
                 <ul style="list-style-type:circle;">
                     <li>All wraps, except Stack Overflow are served on your choice of flour or corn tortilla.</li>
@@ -174,18 +188,70 @@
                 </ul>
             </li>
         </ul>
-    </div>
-
-    <div id="hours" class="content">
-        <h2>Hours</h2>
-        <p>Our hours of operation go here.</p>
+        <h2>
+            Developers Favorites
+        </h2>
+        <p>
+            Enjoy Dev Dish fan favorite menu items at local events or book us for a visit to your neighborhood or for your special occasion.
+        </p>
     </div>
 
     <div id="locations" class="content">
-        <h2>Locations</h2>
-        <p>Our locations go here.</p>
+        <h2>
+            Location
+        </h2>
+        <p>
+            511 Tristin Isle Park Hudsonton, Michigan
+        </p>
     </div>
 
+    <div id="hours" class="content">
+        <h2>
+            Hours
+        </h2>
+        <ul>
+            <li>
+                <span>Monday:</span>
+                <span>10am-7pm</span>
+            </li>
+            <li>
+                <span>Tuesday:</span>
+                <span>10am-7pm</span>
+            </li>
+            <li>
+                <span>Wednesday:</span>
+                <span>10am-7pm</span>
+            </li>
+            <li>
+                <span>Thursday:</span>
+                <span>10am-10pm</span>
+            </li>
+            <li>
+                <span>Friday:</span>
+                <span>10am-9pm</span>
+            </li>
+            <li>
+                <span>Saturday:</span>
+                <span>12am-11pm</span>
+            </li>
+            <li>
+                <span>Sunday:</span>
+                <span>12am-11pm</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <button class="link">
+            <a href="">Facebook.svg</a>
+        </button>
+        <button class="link">
+            <a href="">Instagram.svg</a>
+        </button>
+        <button class="link">
+            <a href="">Twitter.svg</a>
+        </button>
+    </div>
 </body>
 </html>
 
