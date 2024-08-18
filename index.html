@@ -4,78 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Dish Food</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .navbar {
-            background-color: #333;
-            overflow: hidden;
-            width: 100%;
-            position: relative;
-        }
-        .navbar a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-size: 18px;
-            width: 20%;
-        }
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        #header {
-            padding: 20px;
-            text-align: center;
-            background: #ff7043;
-            color: white;
-        }
-        .content {
-            padding: 20px;
-        }
-        .Hero {
-            padding-left: 130px;
-        }
-        #note {
-            font-family: verdana;
-            color: red;
-        }
-        .footer {
-            display: flex;
-            margin: 0 auto;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-        }
-        .link {
-            background-color: grey;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-    <div class="navbar">
+    <nav class="navbar">
         <a href="#menu">Menu</a>
         <a href="#hours">Hours</a>
         <a href="#about">About Us</a>
         <a href="#locations">Locations</a>
-    </div>
+    </nav>
 
-    <div id="header">
+    <header id="header">
         <h1>
             Dev Dish Food Truck & Restaurant
         </h1>
-    </div>
+    </header>
 
-    <div>
-        <img class="Hero" src="./assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg" 
+    <section>
+        <img class="hero" src="./assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg" 
         alt="Lunch Atmosphere" 
         width="800px" 
         height="600px"> 
@@ -84,12 +32,10 @@
         alt="Some tasty burgers" 
         width="800px" 
         height="600px">
-    </div>
+    </section>
 
-    <div id="about" class="content">
-        <h2>
-            About Us
-        </h2>
+    <section id="about" class="content">
+        <h2>About Us</h2>
         <p>
             What's so great about combining the worlds of coding and cuisine? Dev Dish was founded by two passionate developers who turned their love for software into a culinary adventure. After years of coding by day and cooking by night, they decided to merge their two passions and create something extraordinary.
         </p>
@@ -99,67 +45,42 @@
         <p>
             Dev Dish is the brainchild of Alex and Jamie, two friends who met at a hackathon and discovered a shared love for innovative cuisine. With a background in software development and a knack for culinary creativity, they embarked on a journey to deliver delicious, tech-themed dishes to the community.
         </p>
-    </div>
+    </section>
 
-    <div id="menu" class="content">
-        <h2>
-            The Dev Dish Quarterly Menu
-        </h2>
-        <h3>
-            Wraps
-        </h3>
-        <ul style="list-style-type:disc;">
-            <li>Function Fries
-                <ul style="list-style-type:circle;">
-                    <li>Buffalo chicken, romaine lettuce, tomatoes, carrots, ranch, blue cheese</li>
-                </ul>
-            </li>
-        </ul>
-        <ul style="list-style-type:disc;">
-            <li>Loop Wrap
-                <ul style="list-style-type:circle;">
-                    <li>Vegetarian. Hummus, romaine lettuce, sun-dried tomatoes, Kalamata olives, feta cheese, tzatziki sauce</li>
-                </ul>
-            </li>
-        </ul>
-        <ul style="list-style-type:disc;">
-            <li>Stack Overflow
-                <ul style="list-style-type:circle;">
-                    <li>Jalapeno tortilla, turkey chili, onions, cheddar cheese, avocado</li>
-                </ul>
-            </li>
-        </ul>
-        <ul style="list-style-type:disc;">
-            <li>Recursive Roll
-                <ul style="list-style-type:circle;">
-                    <li>Smoked salmon, cream cheese, cucumber, dill, and baby spinach</li>
-                </ul>
-            </li>
-        </ul>
-        <ul style="list-style-type:disc;">
-            <li>Binary Bites
-                <ul style="list-style-type:circle;">
-                    <li>Marinated pork, pickled carrots, cucumber, cilantro, mint, fresno chiles, mayonnaise</li>
-                </ul>
-            </li>
-        </ul>
-        <ul style="list-style-type:disc;">
-            <li>Git Wrap
-                <ul style="list-style-type:circle;">
-                    <li>Vegetarian. Falafel, red onion, romaine lettuce, tomato, and tzatziki sauce</li>
-                </ul>
-            </li>
-        </ul>
-        <ul id="note" style="list-style-type:disc;">
-            <li>Note:
-                <ul style="list-style-type:circle;">
-                    <li>All wraps, except Stack Overflow are served on your choice of flour or corn tortilla.</li>
-                </ul>
-            </li>
-        </ul>
-        <h3>
-            Sides
-        </h3>
+    <section id="menu" class="content">
+        <h2>The Dev Dish Quarterly Menu</h2>
+        <h3>Wraps</h3>
+            <h4>Function Fries</h4>
+                    <p>
+                        Buffalo chicken, romaine lettuce, tomatoes, carrots, ranch, blue cheese
+                    </p>
+            <h4>Loop Wrap</h4>
+                    <p>
+                        vegetarian. Hummus, romaine lettuce, sun-dried tomatoes, Kalamata olives, feta cheese, tzatziki sauce
+                    </p>
+            <h4>Stack Overflow</h4>
+                    <p>
+                        Jalapeno tortilla, turkey chili, onions, cheddar cheese, avocado
+                    </p>
+            <h4>Recursive Roll</h4>
+                    <p>
+                        Smoked salmon, cream cheese, cucumber, dill, and baby spinach
+                    </p>
+            <h4>Binary Bites</h4>
+                    <p>
+                        Marinated pork, pickled carrots, cucumber, cilantro, mint, fresno chiles, mayonnaise
+                    </p>
+            <h4>Git Wrap</h4>
+                    <p>
+                        Vegetarian. Falafel, red onion, romaine lettuce, tomato, and tzatziki sauce
+                    </p>
+        <div id="note" style="list-style-type:disc;">
+            <h4>Note:</h4>
+                    <p>
+                        All wraps, except Stack Overflow are served on your choice of flour or corn tortilla.
+                    </p>
+        </div>
+        <h3>Sides</h3>
         <ul style="list-style-type:disc;">
             <li>Bug-Free Fries
                 <ul style="list-style-type:circle;">
@@ -188,27 +109,21 @@
                 </ul>
             </li>
         </ul>
-        <h2>
-            Developers Favorites
-        </h2>
+        <h2>Developers Favorites</h2>
         <p>
             Enjoy Dev Dish fan favorite menu items at local events or book us for a visit to your neighborhood or for your special occasion.
         </p>
-    </div>
+    </section>
 
-    <div id="locations" class="content">
-        <h2>
-            Location
-        </h2>
+    <section id="locations" class="content">
+        <h2>Location</h2>
         <p>
             511 Tristin Isle Park Hudsonton, Michigan
         </p>
-    </div>
+    </section>
 
-    <div id="hours" class="content">
-        <h2>
-            Hours
-        </h2>
+    <section id="hours" class="content">
+        <h2>Hours</h2>
         <ul>
             <li>
                 <span>Monday:</span>
@@ -239,19 +154,18 @@
                 <span>12am-11pm</span>
             </li>
         </ul>
-    </div>
+    </section>
 
-    <div class="footer">
-        <button class="link">
-            <a href="">Facebook.svg</a>
+    <footer class="footer">
+        <button>
+            <a href="#">Facebook.svg</a>
         </button>
-        <button class="link">
-            <a href="">Instagram.svg</a>
+        <button>
+            <a href="#">Instagram.svg</a>
         </button>
-        <button class="link">
-            <a href="">Twitter.svg</a>
+        <button>
+            <a href="#">Twitter.svg</a>
         </button>
-    </div>
+    </footer>
+    
 </body>
-</html>
-
