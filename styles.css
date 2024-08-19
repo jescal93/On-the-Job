@@ -45,6 +45,10 @@ h2 {
     color: blue;
 }
 
+.h2 {
+    width: 800px;
+}
+
 #h2 {
     display: flex;
     margin: 0 auto;
@@ -67,7 +71,7 @@ h3 {
 
 h4 {
     font-family: papyrus;
-    font-size: 20px;
+    font-size: 30px;
     color: purple;
     display: flex;
     margin: 0 auto;
@@ -136,6 +140,7 @@ h4 {
 
 .menu-p {
     font-family: verdana;
+    font-size: 120%;
     line-height: 2.0;
     display: flex;
     margin: 0 auto;
