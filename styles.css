@@ -189,3 +189,15 @@ h4 {
 .link {
     background-color: grey;
 }
+
+#copyright {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    background-color: grey;
+}
