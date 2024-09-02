@@ -27,3 +27,52 @@ document.addEventListener("DOMContentLoaded", function() {
         }, delay * index);
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll('.content h2, .content h3, .content h4, .menu-p');
+    let delay = 200;
+
+    elements.forEach((element, index) => {
+        element.style.opacity = 0;
+        element.style.transition = 'opacity 2s ease-in-out';
+
+        setTimeout(() => {
+            element.style.opacity = 1;
+        }, delay * index);
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const fadeElements = [
+        document.getElementById('h2'),
+        document.querySelector('.favorites'),
+        ...document.querySelectorAll('.image1')
+    ];
+    
+    let delay = 0;
+
+    fadeElements.forEach((element) => {
+        element.style.opacity = 0;
+        element.style.transition = 'opacity 2s';
+
+        setTimeout(() => {
+            element.style.opacity = 1;
+        }, delay);
+
+        delay += 500;
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll('.location, .hours');
+    let delay = 500;
+
+    elements.forEach((element, index) => {
+        element.style.opacity = 0;
+        element.style.transition = 'opacity 2s';
+
+        setTimeout(() => {
+            element.style.opacity = 1;
+        }, delay * index);
+    });
+});
