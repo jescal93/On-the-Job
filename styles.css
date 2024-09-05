@@ -31,11 +31,26 @@ body {
     color: black;
 }
 
-#header {
+.header {
     padding: 20px;
     text-align: center;
     background: #ff7043;
     color: white;
+}
+
+#intro {
+    text-align: center;
+}
+
+.hero-box {
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-1 {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 h2 {
@@ -84,12 +99,19 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: beige;
 }
 
 .about-p {
     font-size: 16px;
     padding-left: 20px;
+}
+
+.aboutUsImage {
+
+}
+
+.aboutUs1 {
+    
 }
 
 .content {
@@ -128,14 +150,6 @@ h4 {
     align-items: center;
     flex-wrap: wrap;
     margin: 0 auto;
-}
-
-.hero-box {
-    width: 900px;
-}
-
-.hero-1 {
-    width: 100%;
 }
 
 .menu-p {
