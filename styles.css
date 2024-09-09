@@ -38,17 +38,26 @@ body {
     color: white;
 }
 
+.header, .hero-box {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
 #intro {
     text-align: center;
 }
 
 .hero-box {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
 .hero-1 {
-    width: 100%;
+    width: 100rem;
+    height: 50rem;
     align-items: center;
     justify-content: center;
 }
@@ -97,21 +106,40 @@ h4 {
 
 .about-us {
     display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
+.about-us, .aboutUsImage {
+    opacity: 0;
+    transition: opacity 4s ease-in;
+}
+
+
 .about-p {
     font-size: 16px;
-    padding-left: 20px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .aboutUsImage {
-
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .aboutUs1 {
-    
+    width: 100rem;
+    height: 50rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .content {
@@ -144,6 +172,11 @@ h4 {
     padding-top: 45px;
 }
 
+.content, .wraps div, .sides div, #note {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
 .hero {
     display: flex;
     justify-content: center;
@@ -165,6 +198,11 @@ h4 {
 #note {
     font-family: verdana;
     color: red;
+}
+
+#h2, .favorites, .image1 {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 .favorites {
@@ -192,6 +230,11 @@ h4 {
     width: 100%;
 }
 
+.content p.location, .content ul.hours li {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
 .footer {
     display: flex;
     margin: 0 auto;
@@ -212,6 +255,16 @@ h4 {
     align-items: center;
 }
 
-.link {
-    background-color: grey;
+.social-icon {
+    font-size: 50px;
+    margin: 25px;
+}
+
+.social-icon:hover {
+    color: rgb(5, 5, 61);
+}
+
+.footer, #copyright {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
